@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1734177000,,"wq"
+|2,0,1734177463,,"wq"
 :10dd
 |2,0,1734172928,,"10dd"
 
@@ -27,38 +27,52 @@
 # Registers:
 
 # File marks:
-'0  309  0  ~/index.html
-|4,48,309,0,1734177000,"~/index.html"
-'1  617  0  ~/index.html
-|4,49,617,0,1734176984,"~/index.html"
+'0  292  0  ~/index.html
+|4,48,292,0,1734177463,"~/index.html"
+'1  619  0  ~/index.html
+|4,49,619,0,1734177000,"~/index.html"
 '2  309  0  ~/index.html
-|4,50,309,0,1734176984,"~/index.html"
-'3  905  0  ~/index.html
-|4,51,905,0,1734176943,"~/index.html"
-'4  597  0  ~/index.html
-|4,52,597,0,1734176943,"~/index.html"
-'5  597  0  ~/index.html
-|4,53,597,0,1734176943,"~/index.html"
-'6  289  0  ~/index.html
-|4,54,289,0,1734176943,"~/index.html"
-'7  1  0  ~/index.html
-|4,55,1,0,1734176786,"~/index.html"
-'8  1  0  ~/index.html
-|4,56,1,0,1734176786,"~/index.html"
-'9  1  0  ~/index.html
-|4,57,1,0,1734176786,"~/index.html"
+|4,50,309,0,1734177000,"~/index.html"
+'3  927  0  ~/index.html
+|4,51,927,0,1734176984,"~/index.html"
+'4  619  0  ~/index.html
+|4,52,619,0,1734176984,"~/index.html"
+'5  617  0  ~/index.html
+|4,53,617,0,1734176984,"~/index.html"
+'6  309  0  ~/index.html
+|4,54,309,0,1734176984,"~/index.html"
+'7  1215  0  ~/index.html
+|4,55,1215,0,1734176943,"~/index.html"
+'8  907  0  ~/index.html
+|4,56,907,0,1734176943,"~/index.html"
+'9  907  0  ~/index.html
+|4,57,907,0,1734176943,"~/index.html"
 
 # Jumplist (newest first):
+-'  292  0  ~/index.html
+|4,39,292,0,1734177463,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1734177449,"~/index.html"
+-'  619  0  ~/index.html
+|4,39,619,0,1734177000,"~/index.html"
 -'  309  0  ~/index.html
 |4,39,309,0,1734177000,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1734176989,"~/index.html"
+-'  927  0  ~/index.html
+|4,39,927,0,1734176984,"~/index.html"
 -'  617  0  ~/index.html
 |4,39,617,0,1734176984,"~/index.html"
 -'  309  0  ~/index.html
 |4,39,309,0,1734176984,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1734176950,"~/index.html"
+-'  1215  0  ~/index.html
+|4,39,1215,0,1734176943,"~/index.html"
+-'  907  0  ~/index.html
+|4,39,907,0,1734176943,"~/index.html"
+-'  599  0  ~/index.html
+|4,39,599,0,1734176943,"~/index.html"
 -'  905  0  ~/index.html
 |4,39,905,0,1734176943,"~/index.html"
 -'  597  0  ~/index.html
@@ -73,6 +87,30 @@
 |4,39,1,0,1734176786,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1734175922,"~/index.html"
+-'  1682  0  ~/index.html
+|4,39,1682,0,1734174662,"~/index.html"
+-'  1433  0  ~/index.html
+|4,39,1433,0,1734174662,"~/index.html"
+-'  1394  0  ~/index.html
+|4,39,1394,0,1734174662,"~/index.html"
+-'  1145  0  ~/index.html
+|4,39,1145,0,1734174662,"~/index.html"
+-'  1374  0  ~/index.html
+|4,39,1374,0,1734174662,"~/index.html"
+-'  1125  0  ~/index.html
+|4,39,1125,0,1734174662,"~/index.html"
+-'  1086  0  ~/index.html
+|4,39,1086,0,1734174662,"~/index.html"
+-'  837  0  ~/index.html
+|4,39,837,0,1734174662,"~/index.html"
+-'  1066  0  ~/index.html
+|4,39,1066,0,1734174662,"~/index.html"
+-'  817  0  ~/index.html
+|4,39,817,0,1734174662,"~/index.html"
+-'  778  0  ~/index.html
+|4,39,778,0,1734174662,"~/index.html"
+-'  529  0  ~/index.html
+|4,39,529,0,1734174662,"~/index.html"
 -'  1372  0  ~/index.html
 |4,39,1372,0,1734174662,"~/index.html"
 -'  1123  0  ~/index.html
@@ -111,6 +149,22 @@
 |4,39,219,0,1734174662,"~/index.html"
 -'  1  6384  ~/index.html
 |4,39,1,6384,1734174422,"~/index.html"
+-'  1662  0  ~/index.html
+|4,39,1662,0,1734174003,"~/index.html"
+-'  1413  0  ~/index.html
+|4,39,1413,0,1734174003,"~/index.html"
+-'  1354  0  ~/index.html
+|4,39,1354,0,1734174003,"~/index.html"
+-'  1105  0  ~/index.html
+|4,39,1105,0,1734174003,"~/index.html"
+-'  1046  0  ~/index.html
+|4,39,1046,0,1734174003,"~/index.html"
+-'  797  0  ~/index.html
+|4,39,797,0,1734174003,"~/index.html"
+-'  758  0  ~/index.html
+|4,39,758,0,1734174003,"~/index.html"
+-'  509  0  ~/index.html
+|4,39,509,0,1734174003,"~/index.html"
 -'  1352  0  ~/index.html
 |4,39,1352,0,1734174003,"~/index.html"
 -'  1103  0  ~/index.html
@@ -195,78 +249,25 @@
 |4,39,1,8,1734166145,"~/Dockerfile"
 -'  1  8  ~/Dockerfile
 |4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
--'  1  8  ~/Dockerfile
-|4,39,1,8,1734166145,"~/Dockerfile"
 
 # History of marks within files (newest to oldest):
 
 > ~/index.html
-	*	1734176999	0
-	"	309	0
-	^	309	0
-	.	308	7
+	*	1734177461	0
+	"	292	0
+	^	311	0
+	.	310	7
 	+	1	2073
 	+	1	1986
 	+	1	4977
 	+	1	1
 	+	1	6384
-	+	1371	7
-	+	1153	7
-	+	905	1
-	+	616	7
-	+	308	7
+	+	1681	7
+	+	1463	7
+	+	1215	1
+	+	926	7
+	+	618	7
+	+	310	7
 
 > ~/Dockerfile
 	*	1734166143	0
