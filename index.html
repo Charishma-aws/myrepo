@@ -17,88 +17,115 @@
             background-color: #ff5c8d;
             color: white;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            border-bottom: 3px solid #ff3975;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        .logo {
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-bar:focus {
+            outline: none;
+            border: 2px solid #ff3975;
+        }
+        .search-button {
+            padding: 10px;
+            background-color: #ff3975;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #ff5c8d;
+        }
+        .header-right .location-pin, .header-right .voice-assist, .header-right .profile, .header-right .re-order {
+            background-color: #ff5c8d;
+            padding: 12px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5em;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .header-right .location-pin:hover, .header-right .voice-assist:hover, .header-right .profile:hover, .header-right .re-order:hover {
+            background-color: #ff3975;
+        }
+        .offer-banner {
+            background-color: #ffefef;
+            padding: 15px;
             text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #ff3975;
+        }
+        .offer-banner p {
+            font-size: 1.2em;
+            color: #ff3975;
+            margin: 0;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        .food-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
+        .menu-items, .restaurant-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item, .restaurant {
             background-color: white;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
         }
-        .food-item img {
-            width: 120px;
-            height: 120px;
+        .menu-item img, .restaurant img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 8px;
         }
-        .food-info {
-            flex: 1;
-            margin-left: 15px;
-        }
-        .food-info h3 {
-            margin: 0;
-            font-size: 1.2em;
+        .menu-item h3, .restaurant h3 {
+            margin: 10px 0;
             color: #333;
         }
-        .food-info p {
-            margin: 5px 0;
-            color: #777;
-        }
-        .food-info .price {
+        .menu-item .price, .restaurant .offer {
             font-size: 1.4em;
             color: #ff5c8d;
         }
-        .food-info .add-to-cart {
+        .add-to-cart {
             background-color: #ff5c8d;
             color: white;
-            padding: 10px 20px;
+            padding: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
-        .food-info .add-to-cart:hover {
-            background-color: #ff3975;
-        }
-        .auth-form {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: 50px auto;
-        }
-        .auth-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .auth-form input[type="text"], .auth-form input[type="password"], .auth-form input[type="email"] {
             width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-sizing: border-box;
         }
-        .auth-form button {
-            width: 100%;
-            padding: 15px;
-            background-color: #ff5c8d;
-            border: none;
-            color: white;
-            font-size: 1em;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .auth-form button:hover {
+        .add-to-cart:hover {
             background-color: #ff3975;
         }
         .footer {
@@ -106,59 +133,80 @@
             padding: 20px;
             background-color: #333;
             color: white;
+            margin-top: 40px;
         }
-        .food-items-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+        .food-image {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .menu-item, .restaurant {
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Foodie</h1>
-        <p>Delicious food, delivered fast!</p>
+        <div class="logo">Foodie</div>
+        <div class="header-right">
+            <input type="text" class="search-bar" placeholder="Search for food, restaurants...">
+            <button class="search-button">🔍</button>
+            <div class="location-pin" title="Select Location">📍</div>
+            <div class="voice-assist" title="Voice Assistance">🎙️</div>
+            <div class="profile" title="My Profile">👤</div>
+            <div class="re-order" title="Re-order">🔁</div>
+        </div>
     </header>
 
-    <!-- Login/Signup Page -->
+    <!-- Offers Banner Section -->
     <div class="container">
-        <div class="auth-form">
-            <h2>Login</h2>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <input type="password" name="password" placeholder="Enter your password" required>
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+        <div class="offer-banner">
+            <p>Get 20% off on your first order! Use code: FOODIE20</p>
         </div>
     </div>
 
-    <!-- Food Menu Section -->
+    <!-- Food Menu Items Section -->
     <div class="container">
-        <h2>Our Menu</h2>
-        <div class="food-items-list">
-            <!-- Food Item 1 -->
-            <div class="food-item">
-                <img src="https://via.placeholder.com/150" alt="Food 1">
-                <div class="food-info">
-                    <h3>Pizza Margherita</h3>
-                    <p>A classic pizza with fresh ingredients.</p>
-                    <p class="price">$10.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+        <h2>Popular Foods</h2>
+        <div class="menu-items">
+            <!-- Pizza Item -->
+            <div class="menu-item">
+                <img class="food-image" src="https://www.dominos.co.in/files/items/Pizza_Margherita.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>A classic pizza with fresh ingredients like tomatoes, mozzarella, and basil.</p>
+                <p class="price">$10.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <!-- Food Item 2 -->
-            <div class="food-item">
-                <img src="https://via.placeholder.com/150" alt="Food 2">
-                <div class="food-info">
-                    <h3>Cheese Burger</h3>
-                    <p>Juicy beef patty with melted cheese and veggies.</p>
-                    <p class="price">$7.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+            <!-- Cheese Burger Item -->
+            <div class="menu-item">
+                <img class="food-image" src="https://www.simplyrecipes.com/thmb/e9AYygxOg5GcIMyOEFwIMj5nQ68=/2000x1500/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Best-Cheeseburger-LEAD-2-0c0fc9cc96a14ff48c2ec34d9ae71a57.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <p>Juicy beef patty with melted cheese, lettuce, and tomatoes on a soft bun.</p>
+                <p class="price">$7.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <!-- Add more food items here... -->
+        </div>
+
+        <h2>Nearby Restaurants</h2>
+        <div class="restaurant-list">
+            <!-- Restaurant 1 -->
+            <div class="restaurant">
+                <img src="https://www.w3schools.com/w3images/restaurant.jpg" alt="Restaurant 1">
+                <h3>Italian Bistro</h3>
+                <p>Authentic Italian cuisine with a wide range of pizzas and pasta.</p>
+                <p class="offer">10% Off on All Orders</p>
+            </div>
+            <!-- Restaurant 2 -->
+            <div class="restaurant">
+                <img src="https://www.w3schools.com/w3images/restaurant.jpg" alt="Restaurant 2">
+                <h3>Grill Master</h3>
+                <p>Delicious grilled meats and BBQ options.</p>
+                <p class="offer">Free Delivery for First-Time Orders</p>
+            </div>
         </div>
     </div>
 
