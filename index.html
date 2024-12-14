@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NomNom - Food Delivery</title>
     <style>
+        /* General Body Styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
             margin: 0;
             padding: 0;
         }
+        
+        /* Container that holds the page content */
         .container {
-            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #fff;
         }
+
+        /* Login Page Styling */
         .login-container {
             width: 100%;
             max-width: 400px;
-            padding: 20px;
+            padding: 30px;
             background-color: #ff8c00;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         .login-container h1 {
-            text-align: center;
             color: white;
+            margin-bottom: 20px;
         }
         .login-container input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
         .login-container button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #ff6600;
             border: none;
             border-radius: 5px;
@@ -52,90 +57,125 @@
             background-color: #e55a00;
         }
         .register-link {
-            text-align: center;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .register-link a {
             color: #ff6600;
             text-decoration: none;
         }
-        .food-tab {
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background-color: #f8f8f8;
-        }
-        .restaurant-card {
-            width: 200px;
-            margin: 10px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            text-align: center;
-        }
-        .restaurant-card img {
+
+        /* Home Page Styling */
+        #homePage {
             width: 100%;
-            border-radius: 10px;
-        }
-        .restaurant-card h3 {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .restaurant-card button {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .restaurant-card button:hover {
-            background-color: #e55a00;
-        }
-        .search-bar {
+            background-color: #f8f8f8;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Search Bar Styling */
+        .search-bar {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
         .search-bar input {
             flex: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
+            padding: 12px;
             border-radius: 5px;
+            border: 1px solid #ccc;
         }
         .search-bar button {
+            padding: 12px;
             background-color: #ff6600;
-            padding: 10px;
+            color: white;
             border: none;
             border-radius: 5px;
-            color: white;
             cursor: pointer;
         }
-        .account-icon {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ff6600;
-            padding: 10px;
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
+        .search-bar button:hover {
+            background-color: #e55a00;
         }
         .mic-button {
             background-color: #ff6600;
-            padding: 10px;
+            padding: 12px;
             border-radius: 50%;
             color: white;
             cursor: pointer;
-            margin-left: 10px;
         }
-        .reorder-button {
+
+        /* Restaurant Cards Section */
+        .restaurant-tab {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        /* Individual Restaurant Card */
+        .restaurant-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .restaurant-card img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 180px;
+            object-fit: cover;
+        }
+        .restaurant-card h3 {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+        .restaurant-card p {
+            color: #ff6600;
+            font-size: 14px;
+        }
+        .restaurant-card button {
+            margin-top: 15px;
             background-color: #ff6600;
-            padding: 10px;
+            padding: 12px;
+            color: white;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .restaurant-card button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Account Icon */
+        .account-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6600;
+            padding: 12px;
+            border-radius: 50%;
             color: white;
             cursor: pointer;
+        }
+
+        /* Re-order Button Styling */
+        .reorder-button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
             margin-top: 10px;
         }
         .reorder-button:hover {
@@ -161,6 +201,8 @@
 <!-- Home Page (after login) -->
 <div id="homePage" style="display:none;">
     <div class="account-icon" onclick="goToAccount()">👤</div>
+    
+    <!-- Search Bar Section -->
     <div class="search-bar">
         <input type="text" id="foodSearch" placeholder="Search food or restaurant">
         <button onclick="searchFood()">Search</button>
@@ -169,13 +211,24 @@
     </div>
 
     <!-- Food/Restaurant Tab -->
-    <div class="food-tab">
+    <div class="restaurant-tab">
         <div class="restaurant-card">
-            <img src="https://via.placeholder.com/200" alt="Restaurant">
-            <h3>Restaurant Name</h3>
-            <p>Special Offers</p>
+            <img src="https://via.placeholder.com/250" alt="Restaurant">
+            <h3>Pizza Hut</h3>
+            <p>50% OFF on your first order!</p>
             <button onclick="orderFood()">Order Now</button>
-            <button class="reorder-button" onclick="reorderFood()">Re-order</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/250" alt="Restaurant">
+            <h3>KFC</h3>
+            <p>Get a free dessert with a meal</p>
+            <button onclick="orderFood()">Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/250" alt="Restaurant">
+            <h3>Subway</h3>
+            <p>Buy one, get one free on sandwiches!</p>
+            <button onclick="orderFood()">Order Now</button>
         </div>
         <!-- Add more restaurant cards here -->
     </div>
@@ -196,35 +249,37 @@
         }
     }
 
-    // Register functionality placeholder
+    // Placeholder Register Function
     function showRegister() {
         alert("Registration functionality goes here.");
     }
 
-    // Search functionality
+    // Search Functionality
     function searchFood() {
         var searchQuery = document.getElementById("foodSearch").value;
         alert("Searching for: " + searchQuery);
     }
 
-    // Order food functionality
+    // Order Food Functionality
     function orderFood() {
         alert("Ordering food...");
     }
 
-    // Re-order food functionality
-    function reorderFood() {
-        alert("Re-ordering food...");
-    }
-
-    // Go to user account page
+    // Go to Account Page
     function goToAccount() {
         alert("Navigating to account page...");
     }
 
     // Voice Search functionality using Web Speech API
     function startVoiceSearch() {
-        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        // Check if SpeechRecognition is supported by the browser
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            alert("Sorry, your browser does not support voice recognition.");
+            return;
+        }
+
+        const recognition = new SpeechRecognition();
 
         recognition.onstart = function() {
             console.log("Voice recognition started. Speak now.");
@@ -239,6 +294,10 @@
 
         recognition.onerror = function(event) {
             alert("Voice recognition error: " + event.error);
+        };
+
+        recognition.onend = function() {
+            console.log("Voice recognition ended.");
         };
 
         recognition.start();
