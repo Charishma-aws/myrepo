@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1734174662,,"wq"
+|2,0,1734175922,,"wq"
 :10dd
 |2,0,1734172928,,"10dd"
 
@@ -27,32 +27,38 @@
 # Registers:
 
 # File marks:
-'0  219  0  ~/index.html
-|4,48,219,0,1734174662,"~/index.html"
-'1  1  6384  ~/index.html
-|4,49,1,6384,1734174003,"~/index.html"
-'2  199  0  ~/index.html
-|4,50,199,0,1734174003,"~/index.html"
-'3  1  0  ~/index.html
-|4,51,1,0,1734173018,"~/index.html"
-'4  1  0  ~/index.html
-|4,52,1,0,1734173018,"~/index.html"
-'5  1  0  ~/index.html
-|4,53,1,0,1734173018,"~/index.html"
+'0  1  0  ~/index.html
+|4,48,1,0,1734175922,"~/index.html"
+'1  468  0  ~/index.html
+|4,49,468,0,1734174662,"~/index.html"
+'2  219  0  ~/index.html
+|4,50,219,0,1734174662,"~/index.html"
+'3  448  0  ~/index.html
+|4,51,448,0,1734174003,"~/index.html"
+'4  1  6384  ~/index.html
+|4,52,1,6384,1734174003,"~/index.html"
+'5  199  0  ~/index.html
+|4,53,199,0,1734174003,"~/index.html"
 '6  1  0  ~/index.html
 |4,54,1,0,1734173018,"~/index.html"
-'7  1  8  ~/Dockerfile
-|4,55,1,8,1734166145,"~/Dockerfile"
-'8  5  36  ~/Dockerfile
-|4,56,5,36,1734164454,"~/Dockerfile"
-'9  5  36  ~/Dockerfile
-|4,57,5,36,1734164454,"~/Dockerfile"
+'7  1  0  ~/index.html
+|4,55,1,0,1734173018,"~/index.html"
+'8  1  0  ~/index.html
+|4,56,1,0,1734173018,"~/index.html"
+'9  1  0  ~/index.html
+|4,57,1,0,1734173018,"~/index.html"
 
 # Jumplist (newest first):
+-'  1  0  ~/index.html
+|4,39,1,0,1734175922,"~/index.html"
+-'  468  0  ~/index.html
+|4,39,468,0,1734174662,"~/index.html"
 -'  219  0  ~/index.html
 |4,39,219,0,1734174662,"~/index.html"
 -'  1  6384  ~/index.html
 |4,39,1,6384,1734174422,"~/index.html"
+-'  448  0  ~/index.html
+|4,39,448,0,1734174003,"~/index.html"
 -'  199  0  ~/index.html
 |4,39,199,0,1734174003,"~/index.html"
 -'  1  0  ~/index.html
@@ -75,6 +81,38 @@
 |4,39,1,8,1734166145,"~/Dockerfile"
 -'  1  8  ~/Dockerfile
 |4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
 -'  5  36  ~/Dockerfile
 |4,39,5,36,1734166075,"~/Dockerfile"
 -'  5  36  ~/Dockerfile
@@ -107,6 +145,22 @@
 |4,39,5,36,1734164454,"~/Dockerfile"
 -'  5  36  ~/Dockerfile
 |4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734164454,"~/Dockerfile"
 -'  1  0  ~/Dockerfile
 |4,39,1,0,1734164236,"~/Dockerfile"
 -'  1  0  ~/Dockerfile
@@ -123,6 +177,24 @@
 |4,39,1,0,1734164236,"~/Dockerfile"
 -'  1  0  ~/Dockerfile
 |4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1734164236,"~/Dockerfile"
+-'  329  0  ~/index.html
+|4,39,329,0,1734164227,"~/index.html"
 -'  80  0  ~/index.html
 |4,39,80,0,1734164227,"~/index.html"
 -'  80  0  ~/index.html
@@ -143,16 +215,17 @@
 # History of marks within files (newest to oldest):
 
 > ~/index.html
-	*	1734174661	0
-	"	219	0
-	^	219	0
-	.	218	7
+	*	1734175921	0
+	"	1	0
+	^	250	0
+	.	249	7
 	+	1	2073
 	+	1	1986
 	+	1	4977
 	+	1	1
 	+	1	6384
-	+	218	7
+	+	467	7
+	+	249	7
 
 > ~/Dockerfile
 	*	1734166143	0

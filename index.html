@@ -3,217 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie - A Food Delivery App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>NomNom - Food Delivery</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #ff5c8d;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            border-bottom: 3px solid #ff3975;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            font-weight: 600;
-        }
-        .logo {
-            font-size: 2em;
-            color: white;
-            font-weight: bold;
-        }
-        .header-right {
-            display: flex;
-            align-items: center;
-        }
-        .search-bar {
-            padding: 10px;
-            border-radius: 20px;
-            border: none;
-            width: 250px;
-            margin-right: 10px;
-        }
-        .search-bar:focus {
-            outline: none;
-            border: 2px solid #ff3975;
-        }
-        .search-button {
-            padding: 10px;
-            background-color: #ff3975;
-            border: none;
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
-        }
-        .search-button:hover {
-            background-color: #ff5c8d;
-        }
-        .header-right .location-pin, .header-right .voice-assist, .header-right .profile, .header-right .re-order {
-            background-color: #ff5c8d;
-            padding: 12px;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.5em;
-            margin-left: 15px;
-            cursor: pointer;
-        }
-        .header-right .location-pin:hover, .header-right .voice-assist:hover, .header-right .profile:hover, .header-right .re-order:hover {
-            background-color: #ff3975;
-        }
-        .offer-banner {
-            background-color: #ffefef;
-            padding: 15px;
-            text-align: center;
-            margin: 20px 0;
-            border-radius: 8px;
-            border: 1px solid #ff3975;
-        }
-        .offer-banner p {
-            font-size: 1.2em;
-            color: #ff3975;
-            margin: 0;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .menu-items, .restaurant-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .menu-item, .restaurant {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ddd;
-        }
-        .menu-item img, .restaurant img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
         }
-        .menu-item h3, .restaurant h3 {
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ff8c00;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .login-container h1 {
+            text-align: center;
+            color: white;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
             margin: 10px 0;
-            color: #333;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
-        .menu-item .price, .restaurant .offer {
-            font-size: 1.4em;
-            color: #ff5c8d;
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
         }
-        .add-to-cart {
-            background-color: #ff5c8d;
+        .login-container button:hover {
+            background-color: #e55a00;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .register-link a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .food-tab {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+        }
+        .restaurant-card {
+            width: 200px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+        .restaurant-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .restaurant-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .restaurant-card button {
+            background-color: #ff6600;
             color: white;
             padding: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            width: 100%;
         }
-        .add-to-cart:hover {
-            background-color: #ff3975;
+        .restaurant-card button:hover {
+            background-color: #e55a00;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            background-color: #ff6600;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
             color: white;
-            margin-top: 40px;
+            cursor: pointer;
         }
-        .food-image {
-            width: 100%;
-            height: 150px;
-            border-radius: 8px;
-            object-fit: cover;
+        .account-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6600;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
         }
-        .menu-item, .restaurant {
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
+        .mic-button {
+            background-color: #ff6600;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .reorder-button {
+            background-color: #ff6600;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .reorder-button:hover {
+            background-color: #e55a00;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">Foodie</div>
-        <div class="header-right">
-            <input type="text" class="search-bar" placeholder="Search for food, restaurants...">
-            <button class="search-button">🔍</button>
-            <div class="location-pin" title="Select Location">📍</div>
-            <div class="voice-assist" title="Voice Assistance">🎙️</div>
-            <div class="profile" title="My Profile">👤</div>
-            <div class="re-order" title="Re-order">🔁</div>
-        </div>
-    </header>
 
-    <!-- Offers Banner Section -->
-    <div class="container">
-        <div class="offer-banner">
-            <p>Get 20% off on your first order! Use code: FOODIE20</p>
+<!-- Login Page -->
+<div id="loginPage" class="container">
+    <div class="login-container">
+        <h1>NomNom</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div class="register-link">
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
         </div>
     </div>
+</div>
 
-    <!-- Food Menu Items Section -->
-    <div class="container">
-        <h2>Popular Foods</h2>
-        <div class="menu-items">
-            <!-- Pizza Item -->
-            <div class="menu-item">
-                <img class="food-image" src="https://www.dominos.co.in/files/items/Pizza_Margherita.jpg" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>A classic pizza with fresh ingredients like tomatoes, mozzarella, and basil.</p>
-                <p class="price">$10.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <!-- Cheese Burger Item -->
-            <div class="menu-item">
-                <img class="food-image" src="https://www.simplyrecipes.com/thmb/e9AYygxOg5GcIMyOEFwIMj5nQ68=/2000x1500/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Best-Cheeseburger-LEAD-2-0c0fc9cc96a14ff48c2ec34d9ae71a57.jpg" alt="Cheese Burger">
-                <h3>Cheese Burger</h3>
-                <p>Juicy beef patty with melted cheese, lettuce, and tomatoes on a soft bun.</p>
-                <p class="price">$7.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-
-        <h2>Nearby Restaurants</h2>
-        <div class="restaurant-list">
-            <!-- Restaurant 1 -->
-            <div class="restaurant">
-                <img src="https://www.w3schools.com/w3images/restaurant.jpg" alt="Restaurant 1">
-                <h3>Italian Bistro</h3>
-                <p>Authentic Italian cuisine with a wide range of pizzas and pasta.</p>
-                <p class="offer">10% Off on All Orders</p>
-            </div>
-            <!-- Restaurant 2 -->
-            <div class="restaurant">
-                <img src="https://www.w3schools.com/w3images/restaurant.jpg" alt="Restaurant 2">
-                <h3>Grill Master</h3>
-                <p>Delicious grilled meats and BBQ options.</p>
-                <p class="offer">Free Delivery for First-Time Orders</p>
-            </div>
-        </div>
+<!-- Home Page (after login) -->
+<div id="homePage" style="display:none;">
+    <div class="account-icon" onclick="goToAccount()">👤</div>
+    <div class="search-bar">
+        <input type="text" id="foodSearch" placeholder="Search food or restaurant">
+        <button onclick="searchFood()">Search</button>
+        <!-- Voice Search Button -->
+        <button class="mic-button" onclick="startVoiceSearch()">🎤</button>
     </div>
 
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2024 Foodie. All rights reserved.</p>
+    <!-- Food/Restaurant Tab -->
+    <div class="food-tab">
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/200" alt="Restaurant">
+            <h3>Restaurant Name</h3>
+            <p>Special Offers</p>
+            <button onclick="orderFood()">Order Now</button>
+            <button class="reorder-button" onclick="reorderFood()">Re-order</button>
+        </div>
+        <!-- Add more restaurant cards here -->
     </div>
+</div>
+
+<script>
+    // Login functionality
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Sample credentials for login
+        if (username === "user" && password === "password123") {
+            document.getElementById("loginPage").style.display = "none";
+            document.getElementById("homePage").style.display = "block";
+        } else {
+            alert("Invalid credentials. Please try again.");
+        }
+    }
+
+    // Register functionality placeholder
+    function showRegister() {
+        alert("Registration functionality goes here.");
+    }
+
+    // Search functionality
+    function searchFood() {
+        var searchQuery = document.getElementById("foodSearch").value;
+        alert("Searching for: " + searchQuery);
+    }
+
+    // Order food functionality
+    function orderFood() {
+        alert("Ordering food...");
+    }
+
+    // Re-order food functionality
+    function reorderFood() {
+        alert("Re-ordering food...");
+    }
+
+    // Go to user account page
+    function goToAccount() {
+        alert("Navigating to account page...");
+    }
+
+    // Voice Search functionality using Web Speech API
+    function startVoiceSearch() {
+        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+        recognition.onstart = function() {
+            console.log("Voice recognition started. Speak now.");
+        };
+
+        recognition.onresult = function(event) {
+            const searchQuery = event.results[0][0].transcript;
+            document.getElementById("foodSearch").value = searchQuery;
+            alert("Voice Search Result: " + searchQuery);
+            searchFood();  // Automatically triggers the search
+        };
+
+        recognition.onerror = function(event) {
+            alert("Voice recognition error: " + event.error);
+        };
+
+        recognition.start();
+    }
+</script>
+
 </body>
 </html>
 

@@ -52,3 +52,17 @@ docker run --name container1 -d myapp
 git branch
 docker ps
 docker images
+ll
+vim index.html
+git add .
+git status
+git commit -m "updated html file for a swiggy app" .
+git status
+git log
+git push -u origin master
+docker build -t swiggy:latestapp .
+vim index.html
+git add .
+git commit -m "adding extra features" .
+git push -u origin master
+git log
