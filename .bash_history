@@ -66,3 +66,30 @@ git add .
 git commit -m "adding extra features" .
 git push -u origin master
 git log
+ll
+rm -rf index.html
+ll
+vim index.html
+git init
+git add .
+git commit -m "food application code added" .
+git status
+git log
+git push -u origin master
+vim index.html
+rm -rfindex.html
+rm -rf index.html
+ll
+vim index.html
+rm -rf index.html
+vim index.html
+rm -rf index.html
+vim index.html
+git add .
+git commit -m "updated" .
+git push -u origin master
+rm -rf index.html
+vim index.html
+git add .
+git commit -m "updated code with images" .
+git push -u origin master
