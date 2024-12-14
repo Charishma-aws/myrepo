@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1734164454,,"wq"
+|2,0,1734166145,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,12 +25,20 @@
 # Registers:
 
 # File marks:
-'0  5  36  ~/Dockerfile
-|4,48,5,36,1734164454,"~/Dockerfile"
-'1  80  0  ~/index.html
-|4,49,80,0,1734164227,"~/index.html"
+'0  1  8  ~/Dockerfile
+|4,48,1,8,1734166145,"~/Dockerfile"
+'1  5  36  ~/Dockerfile
+|4,49,5,36,1734164454,"~/Dockerfile"
+'2  5  36  ~/Dockerfile
+|4,50,5,36,1734164454,"~/Dockerfile"
+'3  80  0  ~/index.html
+|4,51,80,0,1734164227,"~/index.html"
 
 # Jumplist (newest first):
+-'  1  8  ~/Dockerfile
+|4,39,1,8,1734166145,"~/Dockerfile"
+-'  5  36  ~/Dockerfile
+|4,39,5,36,1734166075,"~/Dockerfile"
 -'  5  36  ~/Dockerfile
 |4,39,5,36,1734164454,"~/Dockerfile"
 -'  1  0  ~/Dockerfile
@@ -39,6 +47,14 @@
 |4,39,80,0,1734164227,"~/index.html"
 -'  80  0  ~/index.html
 |4,39,80,0,1734164227,"~/index.html"
+-'  80  0  ~/index.html
+|4,39,80,0,1734164227,"~/index.html"
+-'  80  0  ~/index.html
+|4,39,80,0,1734164227,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1734164189,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1734164189,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1734164189,"~/index.html"
 -'  1  0  ~/index.html
@@ -47,12 +63,13 @@
 # History of marks within files (newest to oldest):
 
 > ~/Dockerfile
-	*	1734164452	0
-	"	5	36
-	^	5	37
-	.	5	36
+	*	1734166143	0
+	"	1	8
+	^	1	9
+	.	1	8
 	+	4	40
 	+	5	36
+	+	1	8
 
 > ~/index.html
 	*	1734164225	0

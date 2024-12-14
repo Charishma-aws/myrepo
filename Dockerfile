@@ -1,4 +1,4 @@
-FROM ngnix
+FROM nginx
 MAINTAINER Charishma Recharla
 LABEL my application
 WORKDIR /home/username/workspace/jenkins
